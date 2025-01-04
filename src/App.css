@@ -138,4 +138,30 @@ body {
 .btn.btn-danger:hover,
 .btn.btn-danger:focus-visible {
   background: hsl(0, 100%, 40%, 0.2);
+}header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: hsl(200, 100%, 90%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-bar a:hover {
+  background-color: hsl(200, 100%, 30%);
 }
