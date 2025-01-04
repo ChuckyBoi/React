@@ -1,0 +1,141 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  color: hsl(200, 100%, 90%);
+  max-width: 100%; 
+  padding: 1rem;
+  margin: 0;
+  text-align: left; 
+}
+
+.new-item-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 1rem; /* Add more space between form elements */
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 0.5rem; /* Slightly larger gap between rows */
+}
+
+.search-bar {
+  width: 300px; /* Fixed width */
+  margin-bottom: 1rem;
+  padding: 0.5em;
+  border: 1px solid hsl(200, 100%, 40%);
+  background: hsl(200, 100%, 30%);
+  border-radius: 0.25em;
+  color: hsl(200, 100%, 90%);
+  outline: none;
+  text-align: left; 
+}
+
+.search-bar:focus {
+  border: 1px solid hsl(200, 100%, 70%);
+}
+
+.header {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left; 
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  margin-left: 0; 
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 0.3rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  gap: 0.5rem;
+}
+
+.list li label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.btn {
+  width: 150px; /* Fixed button width */
+  background: hsl(200, 100%, 50%, 0.1);
+  border: 1px solid hsl(200, 100%, 50%);
+  color: hsl(200, 100%, 50%);
+  padding: 0.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: hsl(200, 100%, 50%, 0.2);
+}
+
+.btn.btn-danger {
+  background: hsl(0, 100%, 40%, 0.1);
+  border: 1px solid hsl(0, 100%, 40%);
+  color: hsl(0, 100%, 40%);
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus-visible {
+  background: hsl(0, 100%, 40%, 0.2);
+}
+
+.new-item-form input,
+.new-item-form button {
+  width: 300px; /* Fixed width for input fields */
+  text-align: left; 
+}
+
+.new-item-form input:focus,
+.search-bar:focus {
+  border: 1px solid hsl(200, 100%, 70%);
+}
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem; /* Space between the search bar and the delete button */
+  margin-bottom: 1rem;
+}
+
+.search-bar {
+  width: 300px; /* Fixed width */
+}
+
+.btn {
+  width: 150px; /* Fixed width */
+}
+
+.btn.btn-danger {
+  background: hsl(0, 100%, 40%, 0.1);
+  border: 1px solid hsl(0, 100%, 40%);
+  color: hsl(0, 100%, 40%);
+  text-align: center; /* Center text */
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus-visible {
+  background: hsl(0, 100%, 40%, 0.2);
+}
